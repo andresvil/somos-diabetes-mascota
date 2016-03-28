@@ -31,15 +31,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/botella"
-            android:src="@drawable/botella" />
+            android:src="@drawable/botella"
+            android:onClick="verBotella" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/corazon"
             android:src="@drawable/corazon"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp" />
+            android:onClick="verEstado"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -55,5 +57,21 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/octopus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado: Saludable\nLo has cuidado bien"
+        android:id="@+id/estadoTV"
+        android:layout_below="@+id/menuLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="#FFFFFF"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:visibility="invisible"
+        android:alpha="0.9" />
 
 </RelativeLayout>
