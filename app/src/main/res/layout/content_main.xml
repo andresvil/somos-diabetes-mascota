@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/botella"
             android:src="@drawable/botella"
-            android:onClick="verBotella" />
+            android:onClick="verReflexiones" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -47,7 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tesoro"
-            android:src="@drawable/tesoro" />
+            android:src="@drawable/tesoro"
+            android:onClick="verItems" />
     </LinearLayout>
 
     <ImageView
@@ -72,6 +73,20 @@
         android:paddingLeft="35dp"
         android:paddingRight="35dp"
         android:visibility="invisible"
-        android:alpha="0.9" />
+        android:alpha="0.95" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reflexionesList"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#a6a6a6"
+        android:visibility="invisible"
+        android:alpha="0.95" />
 
 </RelativeLayout>
