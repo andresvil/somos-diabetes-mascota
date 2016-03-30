@@ -112,24 +112,24 @@ public class MainActivity extends AppCompatActivity {
         if(!corazonClicked) {
             // botella
             botellaClicked = false;
+            botella.setImageResource(R.drawable.botella);
             reflexionesList.setVisibility(View.INVISIBLE);
-            botella.setColorFilter(Color.argb(255, 0, 0, 0));
 
             // corazón
-            corazon.setColorFilter(Color.argb(255, 179, 24, 34));
-            estado.setVisibility(View.VISIBLE);
             corazonClicked = true;
+            corazon.setImageResource(R.drawable.corazon_clicked);
+            estado.setVisibility(View.VISIBLE);
 
             // cofre
             cofreClicked = false;
-            cofre.setColorFilter(Color.argb(255, 0, 0, 0));
+            cofre.setImageResource(R.drawable.cofre);
         }
 
         // if corazon has already been clicked
         else {
-            corazon.setColorFilter(Color.argb(255, 0, 0, 0));
-            estado.setVisibility(View.INVISIBLE);
             corazonClicked = false;
+            corazon.setImageResource(R.drawable.corazon);
+            estado.setVisibility(View.INVISIBLE);
         }
     }
 
@@ -140,23 +140,23 @@ public class MainActivity extends AppCompatActivity {
         if(!botellaClicked) {
             // botella
             botellaClicked = true;
-            botella.setColorFilter(Color.argb(255, 179, 24, 34));
+            botella.setImageResource(R.drawable.botella_clicked);
             reflexionesList.setVisibility(View.VISIBLE);
 
             // corazon
-            corazon.setColorFilter(Color.argb(255, 0, 0, 0));
-            estado.setVisibility(View.INVISIBLE);
             corazonClicked = false;
+            corazon.setImageResource(R.drawable.corazon);
+            estado.setVisibility(View.INVISIBLE);
 
             // cofre
             cofreClicked = false;
-            cofre.setColorFilter(Color.argb(255, 0, 0, 0));
+            cofre.setImageResource(R.drawable.cofre);
         }
 
         // if botella has already been clicked
         else {
             botellaClicked = false;
-            botella.setColorFilter(Color.argb(255, 0, 0, 0));
+            botella.setImageResource(R.drawable.botella);
             reflexionesList.setVisibility(View.INVISIBLE);
         }
     }
@@ -168,23 +168,23 @@ public class MainActivity extends AppCompatActivity {
         if(!cofreClicked) {
             // botella
             botellaClicked = false;
-            botella.setColorFilter(Color.argb(255, 0, 0, 0));
+            botella.setImageResource(R.drawable.botella);
             reflexionesList.setVisibility(View.INVISIBLE);
 
             // corazon
-            corazon.setColorFilter(Color.argb(255, 0, 0, 0));
+            corazon.setImageResource(R.drawable.corazon);
             estado.setVisibility(View.INVISIBLE);
             corazonClicked = false;
 
             // cofre
             cofreClicked = true;
-            cofre.setColorFilter(Color.argb(255, 179, 24, 34));
+            cofre.setImageResource(R.drawable.cofre_clicked);
         }
 
         // if cofre has already been clicked
         else {
             cofreClicked = false;
-            cofre.setColorFilter(Color.argb(255, 0, 0, 0));
+            cofre.setImageResource(R.drawable.cofre);
         }
     }
 }
